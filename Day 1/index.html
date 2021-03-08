@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="./style.css"> 
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class = "key" id = "keyA" data-key="65">
+            <kbd>A</kbd>
+            <br> 
+            <span>CLAP</span>
+        </div>
+
+        <div class = "key" id = "keyS" data-key="83">
+            <kbd>S</kbd>
+            <br> 
+            <span>HIHAT</span>
+        </div>
+
+        <div class = "key" id = "keyD" data-key="68">
+            <kbd>D</kbd>
+            <br> 
+            <span>KICK</span>
+        </div>
+
+        <div class = "key" id = "keyF" data-key="70">
+            <kbd>F</kbd>
+            <br> 
+            <span id="over">OPEN</span>
+        </div>
+
+        <div class = "key" id = "keyG" data-key="71">
+            <kbd>G</kbd>
+            <br> 
+            <span>BOOM</span>
+        </div>
+
+        <div class = "key" id = "keyH" data-key="72">
+            <kbd>H</kbd>
+            <br> 
+            <span>RIDE</span>
+        </div>
+
+        <div class = "key" id = "keyJ" data-key="74">
+            <kbd>J</kbd>
+            <br> 
+            <span>SNARE</span>
+        </div>
+
+        <div class = "key" id = "keyK" data-key="75">
+            <kbd>K</kbd>
+            <br> 
+            <span>TOM</span>
+        </div>
+
+        <div class = "key" id = "keyL" data-key="76">
+            <kbd>L</kbd>
+            <br> 
+            <span>TINK</span>
+        </div>
+
+    </div>
+
+    <section>
+
+        <audio id="audioA">
+            <source src="./sounds/clap.wav">
+        </audio>
+
+        <audio id="audioS">
+            <source src="./sounds/hihat.wav">
+        </audio>
+
+        <audio id="audioD">
+            <source src="./sounds/kick.wav">
+        </audio>
+
+        <audio id="audioF">
+            <source src="./sounds/openhat.wav">
+        </audio>
+
+        <audio id="audioG">
+            <source src="./sounds/boom.wav">
+        </audio>
+
+        <audio id="audioH">
+            <source src="./sounds/ride.wav">
+        </audio>
+
+        <audio id="audioJ">
+            <source src="./sounds/snare.wav">
+        </audio>
+
+        <audio id="audioK">
+            <source src="./sounds/tom.wav">
+        </audio>
+
+        <audio id="audioL">
+            <source src="./sounds/tink.wav">
+        </audio>
+
+    </section>
+
+    <script src="./app.js"> </script>
+    
+</body>
+</html>
