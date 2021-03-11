@@ -48,9 +48,17 @@ function hands(){
 
     else{
         SecondsInfo.innerHTML = ' ' + secondsValue;  
+        minuteInfo.innerHTML = minutesValue + ':';
+    }
+
+    if(minutesValue <10){
+        minuteInfo.innerHTML = '0' + minutesValue + ':';
+    }
+
+    else{ 
+        minuteInfo.innerHTML = minutesValue + ':';
     }
     
-    minuteInfo.innerHTML = minutesValue + ':'; 
     hoursInfo.innerHTML = hoursValue + ':'; 
 
     //Day Information 
