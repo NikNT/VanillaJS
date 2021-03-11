@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Variables */
+
+:root{
+    --spacing: 10px;
+    --blur: 10px; 
+    --color: #035efc; 
+    --translateX: 0px;
+    --TranslateY: 0px; 
+}
+
+.js{
+    color: var(--color);
+}
+
+
+img{
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+    background-color: var(--color); 
+    transform: translate(var(--translateX), var(--TranslateY));
+
+
+    height: 400px;
+    width: 550px;
+}
+
+#rotate{
+    transform: rotate(var(--rotate));
+}
+
+/* Generic Body Layout*/
+
+body{
+    background: url('./gradient.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    margin: 20px 0 0 400px;
+}
+
+
+h1{
+    text-align: center;
+}
+
