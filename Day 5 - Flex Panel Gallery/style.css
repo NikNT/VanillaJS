@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Redressed', cursive;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    color:white; 
+
+}
+
+.flexbox{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#first{background: url(./img/first.jpg);background-size: cover;background-repeat: no-repeat}
+#second{background: url(./img/second.jpg); background-size: cover;background-repeat: no-repeat}
+#third{background: url(./img/third.jpg);background-size: cover;background-repeat: no-repeat}
+#fourth{background: url(./img/fourth.jpg);background-size: cover;background-repeat: no-repeat}
+#fifth{background: url(./img/fifth.jpg);background-size: cover;background-repeat: no-repeat}
+
+
+.flexitem{
+    flex: 1;
+}
+
+
+h1{
+    font-size: 300px;
+    text-align: center;
+    margin-top: 400px; 
+}
+
+.top{
+    transform: translateY(-800px);
+}
+
+.bottom{
+    transform: translateY(1000px);
+}
+
+
+.onmouse{
+    flex: 3; 
+    transition: all 1s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+}  
+
+
+.onmouse:hover h1{
+    font-size: 300px; 
+    transition: all 1s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+}
+
+
+.onmouse:hover .top{
+    transform: translateY(0px);
+    transition: all 1s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+}
+
+
+.onmouse:hover .bottom{
+    transform: translateY(0px);
+    transition: all 1s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+}
+
+
+.leaveClass{
+    flex: 1;  
+    transition: all 1s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+}
+
+.leaveClass .top{
+    transform: translateY(-800px);
+    transition: all 1s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+}
+
+.leaveClass .bottom{
+    transform: translateY(1000px);
+    transition: all 1s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+}
+
+
